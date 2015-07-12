@@ -1,0 +1,10 @@
+#!/usr/bin/iodine
+use os;
+
+use potassium.router;
+use .myapp.urls;
+
+func main () {
+    appRouter = router.Router (urls.getRoutes (), os.getEnv ("PATH_INFO"));
+    appRouter.run ();
+}

@@ -1,0 +1,11 @@
+use potassium.router;
+
+use MyAppViews from .views;
+
+func getRoutes () {
+    urlList = List ();
+    urlList.add(router.URLItem("/", MyAppViews ().HomePageView));
+    urlList.add(router.URLItem("/404", MyAppViews ().NotFoundView));
+    urlSpec = router.URLSpec(urlList, "/404");
+    return urlSpec;
+}

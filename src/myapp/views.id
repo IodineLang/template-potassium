@@ -1,0 +1,20 @@
+use potassium.views;
+use potassium.response;
+use potassium.request;
+
+class MyAppViews {
+    func MyAppViews (self) {
+        self.HomePageView = views.View (request.GetRequest (),
+                                        self.homePageView);
+        self.NotFoundView = views.View (request.AnyRequest (),
+                                        self.notFoundView);
+    }
+    
+    func homePageView (self, requestData) {
+        return response.HTMLResponse ("<h1>Hey!</h1>", 200);
+    }
+    
+    func notFoundView (self, requestData) {
+        return response.HTMLResponse ("<h1>Not found</h1>", 404);
+    }
+}
