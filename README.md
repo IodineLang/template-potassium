@@ -1,7 +1,12 @@
-# template-potassium
-An installable template for a Potassium project
+# Potassium Bootstrapping Template
+[![ion install --local template-potassium](https://img.shields.io/badge/ion%20install%20----local-template--potassium-blue.svg?style=flat-square)](https://github.com/IodineLang/Ion)
+![version v1.0.0](https://img.shields.io/badge/version-v1.0.0-blue.svg?style=flat-square)
+![deps](https://img.shields.io/badge/dependencies-potassium-blue.svg?style=flat-square)
+
+An installable template for a Potassium project. 
 
 ## After Installing
+- Run `ion install --conf` (or `ion install --global --conf`, if you prefer).
 - Rename src/myapp/ to your application name
 - Change .myapp.urls to .newappname.urls in src/application
 - Change src/myapp/views.id to suit your own app's views and change MyAppViews to
